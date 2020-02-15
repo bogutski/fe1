@@ -24,10 +24,14 @@ const items = [
 ];
 
 function App() {
+  function buttonClicked(name){
+    console.log('CLICKED!!' + name)
+  }
+
   return (
     <div className="App">
       <Header menuItems={items}/>
-      <Content />
+      <Content bc={buttonClicked}/>
       <Footer />
     </div>
   );
